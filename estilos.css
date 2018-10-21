@@ -1,0 +1,47 @@
+
+body {
+	background-color: #EEEEEE;
+	color: #414141;
+}
+
+.centrado {
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+  display: block;             /* Add this */
+  text-decoration: none;      /* Add this */
+  color: #FFF;
+  background-color: #5995DA;    /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;    /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.divTabla {
+  display: table;       
+  width: auto;         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.divTablaFila {
+  display: table-row;
+  width: auto;
+  clear: both;
+  align-content: center;
+  padding: 400px;
+}
+.divTablaCol {
+  float: left; /* fix for  buggy browsers */
+  display: table-cell;         
+  width: 400px;    
+  align-content: center;     
+}
