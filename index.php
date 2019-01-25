@@ -5,7 +5,7 @@ $statement = $tmp->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
  ?>
-<?php require 'header.php'; ?>
+<?php require 'encabezado.php'; ?>
 <div class="container">
   <div class="card mt-5">
     <div class="card-header">
@@ -33,8 +33,8 @@ $people = $statement->fetchAll(PDO::FETCH_OBJ);
             <td><?= $person->edad; ?></td>
             <td><?= $person->direccion; ?></td>
             <td>
-              <a href="edit.php?id=<?= $person->id ?>" class="btn btn-info">Editar</a>
-              <a onclick="return confirm('Are you sure you want to delete this entry?')" href="delete.php?id=<?= $person->id ?>" class='btn btn-danger'>Borrar</a>
+              <a href="modificar.php?id=<?= $person->id ?>" class="btn btn-info">Editar</a>
+              <a onclick="return confirm('Are you sure you want to delete this entry?')" href="eliminar.php?id=<?= $person->id ?>" class='btn btn-danger'>Borrar</a>
             </td>
           </tr>
         <?php endforeach; ?>
@@ -42,4 +42,3 @@ $people = $statement->fetchAll(PDO::FETCH_OBJ);
     </div>
   </div>
 </div>
-<?php require 'footer.php'; ?>

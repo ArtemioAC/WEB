@@ -1,8 +1,8 @@
 <?php
 
-define("MYSQL_HOST", "mysql:host=localhost;dbname=id8505033_pruebas");
-define("MYSQL_USER", "id8505033_edgar");
-define("MYSQL_PASSWORD", "123base");
+define("MYSQL_HOST", "mysql:host=localhost;dbname=id5475247_tareaphp");
+define("MYSQL_USER", "id5475247_artemioac");
+define("MYSQL_PASSWORD", "temo51papa");
 
 
 try {
